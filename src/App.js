@@ -2,7 +2,7 @@ import Home from "./routes/Home";
 import Coursework from "./routes/Coursework";
 import Projects from "./routes/Projects";
 
-import './App.css';
+import './Default.css';
 import { Routes, Route} from "react-router-dom";
 import Navbar from './Navbar';
 

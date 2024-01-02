@@ -55,29 +55,7 @@ const HomePage = () => {
         <Group position="apart">
           <Group direction="column" spacing={2}>
             <Text>i'm a sophomore at harvard college studying computer science & philosophy.</Text>
-            {/* <Text>
-              i&nbsp;
-              <Anchor
-                href="https://github.com/conanlu"
-                target="_blank"
-                variant="link"
-                weight={500}
-                underline
-              >
-                <strong>code</strong>
-              </Anchor>
-              &nbsp;and&nbsp;
-              <Anchor
-                href="https://aycanogut.medium.com/"
-                target="_blank"
-                variant="link"
-                weight={500}
-                underline
-              >
-                <strong>write</strong>
-              </Anchor>
-              &nbsp;among other things.
-            </Text> */}
+        
             <Text>
               find my whole spiel&nbsp;
               <Link href="/about" passHref prefetch={false}>

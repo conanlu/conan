@@ -60,12 +60,6 @@ const About = () => {
         <Title order={1} mb={30}>
           meeee :)
         </Title>
-        {/* <Text weight={500} mt={8}>
-          <strong>Aycan Öğüt</strong>. 1989.
-        </Text>
-        <Text weight={500} mt={20}>
-          I&apos;m a self-taught developer from Izmir.
-        </Text> */}
         <Text weight={500} mt={20}>
         i ran an astrology blog on tumblr when i was thirteen. i also grew a tiny readership answering random questions on quora. i was even a charli xcx fan on twitter which i later quit to pursue middle school full-time.  i’ve grown a lot since then, but i still carry the experience of having lived many, many digital lives into the work i do today. at harvard, i study computer science and philosophy, where i hope to understand how technology interfaces with societies, cultures, and values.
         </Text>

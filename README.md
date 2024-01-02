@@ -1,6 +1,7 @@
 ## Overview
 
-Portfolio web app built with Next, Mantine, and TypeScript.  
+Portfolio web app for Conan Lu built with Next, Mantine, and TypeScript.
+Credit goes to Aycan Öğüt.  
 Page contents provided by Github, Raindrop, and rss2json APIs.
 
 <br />

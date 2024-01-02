@@ -5,27 +5,19 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
           http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-      <loc>https://aycan.dev/</loc>
+      <loc>https://conan.fyi/</loc>
       <lastmod>2023-02-04T14:24:03+00:00</lastmod>
     </url>
     <url>
-      <loc>https://aycan.dev/projects</loc>
+      <loc>https://conan.fyi/projects</loc>
       <lastmod>2023-02-04T14:24:03+00:00</lastmod>
     </url>
     <url>
-      <loc>https://aycan.dev/projects/repos</loc>
+      <loc>https://conan.fyi/experience</loc>
       <lastmod>2023-02-04T14:24:03+00:00</lastmod>
     </url>
     <url>
-      <loc>https://aycan.dev/articles</loc>
-      <lastmod>2023-02-04T14:24:03+00:00</lastmod>
-    </url>
-    <url>
-      <loc>https://aycan.dev/bookmarks</loc>
-      <lastmod>2023-02-04T14:24:03+00:00</lastmod>
-    </url>
-    <url>
-      <loc>https://aycan.dev/timeline</loc>
+      <loc>https://conan.fyi/coursework</loc>
       <lastmod>2023-02-04T14:24:03+00:00</lastmod>
     </url>
     <url>

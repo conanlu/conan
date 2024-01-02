@@ -1,3 +1,5 @@
+'use client'
+
 import { Grid, Group, Title, useMantineTheme } from '@mantine/core'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'

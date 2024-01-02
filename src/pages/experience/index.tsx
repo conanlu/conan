@@ -1,3 +1,5 @@
+'use client'
+
 import { List, Timeline as MantineTimeline, Text, Title } from '@mantine/core'
 import {
   useMantineTheme,

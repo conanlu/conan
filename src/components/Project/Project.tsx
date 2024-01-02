@@ -5,11 +5,13 @@ import {
   Divider,
   Group,
   Paper,
+  Image,
+  Center,
   Text,
   useMantineTheme,
 } from '@mantine/core'
 import React, { FC } from 'react'
-import { BrandGithub, BrandVercel } from 'tabler-icons-react'
+import { BrandGithub, BrandVercel, Link } from 'tabler-icons-react'
 
 import { IProjectProps } from '../../interfaces/Project.interface'
 import Transition from '../Transition/Transition'
@@ -20,12 +22,12 @@ const Project: FC<IProjectProps> = ({ title, description, links, stack }) => {
   const theme = useMantineTheme()
 
   return (
-    <Transition whileHover={{ scale: 1.01 }}>
+    <Transition whileHover={{ scale: 1.03 }}>
       <Paper
         className={classes.card}
         withBorder
-        radius="sm"
-        shadow="md"
+        radius="lg"
+        // shadow="md"
         px="md"
         py="xs"
       >
@@ -37,7 +39,7 @@ const Project: FC<IProjectProps> = ({ title, description, links, stack }) => {
             <Box>
               {links &&
                 links.map((link: { link: string; id: number }) =>
-                  link.link.includes('github') ? (
+                  link.id == 1 ? (
                     <Anchor
                       key={link.id}
                       component="a"
@@ -59,7 +61,7 @@ const Project: FC<IProjectProps> = ({ title, description, links, stack }) => {
                       href={link.link}
                       target="_blank"
                     >
-                      <BrandVercel
+                      <Link
                         size={22}
                         strokeWidth={2}
                         color={theme.colorScheme === 'dark' ? 'white' : 'black'}
@@ -69,12 +71,38 @@ const Project: FC<IProjectProps> = ({ title, description, links, stack }) => {
                   )
                 )}
             </Box>
+            
           </Group>
-          <Text mb={20} size="sm">
+
+
+          <Group direction="column" mt={5}>
+
+          <Text mb={5} size="sm">
             {description}
           </Text>
+
+            <Center>
+              <Group direction="column">
+{/* 
+
+          <Image
+      align="center"
+      radius="0px"
+      height={270}
+      w="auto"
+      src="/meee.jpg"
+    /> */}
+    </Group>
+
+</Center>
+
+
+            </Group>
+          
           <Box sx={{ width: '100%', height: '100%' }}>
+            
             <Divider my="xs" mt="auto" size="xs" />
+            
             {stack &&
               stack.map((item: string) => (
                 <Badge
@@ -89,6 +117,7 @@ const Project: FC<IProjectProps> = ({ title, description, links, stack }) => {
                 </Badge>
               ))}
           </Box>
+          
         </Group>
       </Paper>
     </Transition>

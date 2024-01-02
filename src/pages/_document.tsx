@@ -4,7 +4,8 @@ export default class _Document extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>         
+  </Head>
         <body>
           <Main />
           <NextScript />

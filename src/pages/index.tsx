@@ -17,6 +17,8 @@ import {
   Stack,
   Text,
   Title,
+  Image,
+  Center,
   useMantineColorScheme,
 } from '@mantine/core'
 import dynamic from 'next/dynamic'
@@ -46,24 +48,25 @@ const HomePage = () => {
   return (
     <Layout>
       <Title order={1} mb={30}>
-        Hello 🤙
+        hi, i'm conan! 💿🎐🍄
+      {/* 🦪💿🎠🫐🎐🍄 */}
       </Title>
       <Box>
         <Group position="apart">
           <Group direction="column" spacing={2}>
-            <Text>I&apos;m a frontend developer based in İzmir, Turkey.</Text>
-            <Text>
-              I love to&nbsp;
+            <Text>i'm a sophomore at harvard college studying computer science & philosophy.</Text>
+            {/* <Text>
+              i&nbsp;
               <Anchor
-                href="https://github.com/aycanogut"
+                href="https://github.com/conanlu"
                 target="_blank"
                 variant="link"
                 weight={500}
                 underline
               >
-                <strong>build things</strong>
+                <strong>code</strong>
               </Anchor>
-              &nbsp;with JavaScript and publish&nbsp;
+              &nbsp;and&nbsp;
               <Anchor
                 href="https://aycanogut.medium.com/"
                 target="_blank"
@@ -71,20 +74,60 @@ const HomePage = () => {
                 weight={500}
                 underline
               >
-                <strong>articles</strong>
+                <strong>write</strong>
               </Anchor>
-              &nbsp;regularly.
-            </Text>
-            <Text mt={10}>
-              Find out&nbsp;
+              &nbsp;among other things.
+            </Text> */}
+            <Text>
+              find my whole spiel&nbsp;
               <Link href="/about" passHref prefetch={false}>
                 <Anchor component="span" weight={500} underline>
-                  <strong>more</strong>.
+                  <strong>here</strong>
                 </Anchor>
               </Link>
+              , and my resume&nbsp;
+              <Link href="https://drive.google.com/file/d/1GFE7QVwFNAvAmZSuFyxusM9nvb7h4IWW/view?usp=sharing" passHref target="_blank" rel="noopener noreferrer" prefetch={false}>
+                <Anchor component="span" weight={500} underline>
+                  <strong>here</strong>
+                </Anchor>
+              </Link>
+              .
             </Text>
+
+            <Text mt={10}>below is me in seattle which is where i live.</Text>
+
+      
           </Group>
+
+
+          
         </Group>
+
+
+          {/* <Center> */}
+
+
+          <Group direction="column" mt={40}>
+
+
+            
+          
+        <Image
+      height={400}
+      radius="xl"
+      // w={500}
+      src="/meee.jpg"
+    />
+
+
+
+
+</Group>
+
+
+{/* </Center> */}
+
+{/*         
         <Group direction="column" mt={60}>
           <Title order={2}>Tech Stack</Title>
           <Paper py="lg" sx={{ background: 'rgba(0,0,0, 0.03)' }}>
@@ -147,7 +190,7 @@ const HomePage = () => {
               ))}
             </Stack>
           </Group>
-        )}
+        )} */}
       </Box>
     </Layout>
   )

@@ -11,12 +11,12 @@ const Seo: FC = () => {
 
   const pathname = router.asPath
   const title = pathname === '/' ? 'home' : pathname.substring(1)
-  const capitalizedTitle = title.charAt(0).toUpperCase() + title.slice(1)
+  const lowercaseTitle = title.charAt(0).toLowerCase() + title.slice(1)
 
   return (
     <NextSeo
-      title="aycan.dev"
-      titleTemplate={`${capitalizedTitle} | %s`}
+      title="conan.fyi"
+      titleTemplate={`${lowercaseTitle} @ %s`}
       description="The portfolio website of Aycan Öğüt, a software developer."
       openGraph={{
         url: 'https://www.aycan.dev',

@@ -1,36 +1,65 @@
 import { List, Timeline as MantineTimeline, Text, Title } from '@mantine/core'
+import {
+  useMantineTheme
+} from '@mantine/core'
 import { Circle, CircleDashed } from 'tabler-icons-react'
 
 import Layout from '../../components/Layout/Layout'
 
-const Timeline = () => (
+
+
+
+const Coursework = () => {
+  
+
+  const theme = useMantineTheme()
+
+
+
+  return(
+  
   <Layout>
     <Title order={1} mb={30}>
-      Timeline
+    🏫
     </Title>
-    <MantineTimeline active={1} color="violet">
+    <MantineTimeline active={1} color={theme.colorScheme === 'dark' ? 'yellow' : 'blue'}>
       <MantineTimeline.Item
         bullet={<Circle size={48} strokeWidth={4} color="white" />}
-        title="Still learning"
+        title="spring 2024"
       >
         <List center icon>
           <List.Item>
             <Text color="dimmed" size="sm">
-              - After some relaxed time, I&apos;m back to learning and working.
+              cs 124: data structures and algorithms
             </Text>
           </List.Item>
           <List.Item>
             <Text color="dimmed" size="sm">
-              - Joined a start-up specializing in education technologies.
+              wgss 1425: gender and technology, gender as technology
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              phil 97: low brow media
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              phil 16: sex, love, and friendship
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              teaching fellow, cs 20 (discrete math for computer science)
             </Text>
           </List.Item>
         </List>
 
-        <Text size="xs" mt={4}>
+        {/* <Text size="xs" mt={4}>
           Now
-        </Text>
+        </Text> */}
       </MantineTimeline.Item>
-      <MantineTimeline.Item
+      {/* <MantineTimeline.Item
         bullet={<Circle size={48} strokeWidth={4} color="white" />}
         title="Learning and growing"
       >
@@ -64,48 +93,106 @@ const Timeline = () => (
         <Text size="xs" mt={4}>
           2022
         </Text>
-      </MantineTimeline.Item>
+      </MantineTimeline.Item> */}
       <MantineTimeline.Item
         bullet={<Circle size={48} strokeWidth={4} color="white" />}
-        title="Landed first job as a developer"
-        lineVariant="dashed"
+        title="fall 2023"
+        // lineVariant="dashed"
       >
         <List center icon>
           <List.Item>
             <Text color="dimmed" size="sm">
-              - Joined a start-up specializing in e-commerce fulfillment,
-              robotics and logistics services.
+              cs 120: algorithms and their limitations
             </Text>
           </List.Item>
           <List.Item>
             <Text color="dimmed" size="sm">
-              - Engaged in the development, maintenance, and optimization of the
-              company&apos;s website, oplog.io, a several internal projects and
-              one of the company&apos;s production applications.
+              cs 105: privacy and technology
             </Text>
           </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              stat 110: intro to probability
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              phil 166t: philosophy of technology
+            </Text>
+          </List.Item>
+          
+        </List>
 
+      </MantineTimeline.Item>
+      <MantineTimeline.Item
+        bullet={<Circle size={48} strokeWidth={4} color="white" />}
+        title="spring 2023"
+        // lineVariant="dashed"
+      >
+        <List center icon>
           <List.Item>
             <Text color="dimmed" size="sm">
-              - Acquired knowledge and experience in technologies such as
-              JavaScript, React.js, TypeScript, Mantine, Tailwind, Redux,
-              Directus, Zustand, and Hubspot.
+              cs 51: abstraction and design in computation
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              cs 20: discrete math for computer science
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              frsemr 65g: what (and who) to believe?
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              expos 20: the art of the con
             </Text>
           </List.Item>
         </List>
-        <Text size="xs" mt={4}>
-          2021
-        </Text>
+ 
       </MantineTimeline.Item>
       <MantineTimeline.Item
-        title="Started to learn programming"
+        bullet={<Circle size={48} strokeWidth={4} color="white" />}
+        title="fall 2022"
+        // lineVariant="dashed"
+      >
+        <List center icon>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              cs 50: introduction to computer science
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              math 22a: linear algebra and proofs
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              gov 1290: democracy and authoritarianism
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              gened 1166: pluralism
+            </Text>
+          </List.Item>
+        </List>
+        {/* <Text size="xs" mt={4}>
+          fall 2022
+        </Text> */}
+      </MantineTimeline.Item>
+      {/* <MantineTimeline.Item
+        title="redmond high school"
         bullet={<CircleDashed size={48} strokeWidth={4} color="gray" />}
         lineVariant="dashed"
       >
         <List center icon>
           <List.Item>
             <Text color="dimmed" size="sm">
-              - Started with Python and transitioned into web development.
+              - president, national honor society.
             </Text>
           </List.Item>
           <List.Item>
@@ -130,15 +217,18 @@ const Timeline = () => (
         </Text>
       </MantineTimeline.Item>
       <MantineTimeline.Item
-        title="Born"
+        title="born (yay!!!)"
         bullet={<CircleDashed size={48} strokeWidth={4} color="gray" />}
       >
         <Text size="xs" mt={4}>
-          1989
+          2004
         </Text>
-      </MantineTimeline.Item>
+      </MantineTimeline.Item> */}
     </MantineTimeline>
   </Layout>
 )
 
-export default Timeline
+
+    }
+
+export default Coursework

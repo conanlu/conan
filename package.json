@@ -1,6 +1,6 @@
 {
-  "name": "aycan.dev",
-  "author": "Aycan Ogut",
+  "name": "conan",
+  "author": "conan",
   "version": "1.0.0",
   "private": true,
   "scripts": {

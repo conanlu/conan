@@ -17,8 +17,8 @@ const Projects = () => {
   return (
     <Layout>
       <Group position="apart" mb={30}>
-        <Title order={1}>Projects</Title>
-        <Title order={2}>
+        <Title order={1}>💻</Title>
+        {/* <Title order={2}>
           <Link
             href="projects/repos"
             prefetch={false}
@@ -34,11 +34,11 @@ const Projects = () => {
           >
             Github Repos
           </Link>
-        </Title>
+        </Title> */}
       </Group>
       <Grid gutter="xl" grow>
         {projects.map((project: IProjectProps) => (
-          <Grid.Col span={12} xs={6} key={project.id}>
+          <Grid.Col span={6} xs={4} key={project.id}>
             <Project
               id={project.id}
               image={project.image}

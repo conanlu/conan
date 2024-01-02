@@ -91,12 +91,12 @@ const Header = ({ links }: IHeaderProps) => {
           aria-label="Spotlight Button"
         >
           <Text size="md" weight={600}>
-            ⌘
+            search
           </Text>
-          &nbsp;<Text>+</Text>&nbsp;
+          {/* &nbsp;<Text>+</Text>&nbsp;
           <Text size="md" weight={600}>
             K
-          </Text>
+          </Text> */}
         </ActionIcon>
         <ColorSchemeToggle />
       </Container>

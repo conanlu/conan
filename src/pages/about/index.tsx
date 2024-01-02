@@ -18,6 +18,11 @@ import { ReactNode } from 'react'
 
 import Layout from '../../components/Layout/Layout'
 
+
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
+
+
 const GitHubCalendar = dynamic(() => import('react-github-calendar'))
 const NowPlaying = dynamic(
   () => import('../../components/NowPlaying/NowPlaying')
@@ -30,46 +35,101 @@ const About = () => {
   const socialMediaIcons: { component: ReactNode; url: string }[] = [
     {
       component: <Github color={iconColor} size={32} />,
-      url: 'https://www.github.com/aycanogut',
+      url: 'https://www.github.com/conanlu',
     },
     {
       component: <Linkedin color={iconColor} size={32} />,
-      url: 'https://www.linkedin.com/in/aycanogut',
-    },
-    {
-      component: <Medium color={iconColor} size={32} />,
-      url: 'https://medium.com/@aycanogut',
+      url: 'https://www.linkedin.com/in/conan-lu',
     },
     {
       component: <Twitter color={iconColor} size={32} />,
-      url: 'https://twitter.com/bleedeleventh',
+      url: 'https://twitter.com/conanvevo',
     },
     {
       component: <Gmail color={iconColor} size={32} />,
-      url: 'mailto:me@aycan.dev',
+      url: 'mailto:conanlu@college.harvard.edu',
     },
   ]
 
   return (
+
     <Layout>
       <Box>
+      <div className={inter.className}>
+
         <Title order={1} mb={30}>
-          About
+          meeee :)
         </Title>
-        <Text weight={500} mt={8}>
+        {/* <Text weight={500} mt={8}>
           <strong>Aycan Öğüt</strong>. 1989.
         </Text>
         <Text weight={500} mt={20}>
           I&apos;m a self-taught developer from Izmir.
+        </Text> */}
+        <Text weight={500} mt={20}>
+        i ran an astrology blog on tumblr when i was thirteen. i also grew a tiny readership answering random questions on quora. i was even a charli xcx fan on twitter which i later quit to pursue middle school full-time.  i’ve grown a lot since then, but i still carry the experience of having lived many, many digital lives into the work i do today. at harvard, i study computer science and philosophy, where i hope to understand how technology interfaces with societies, cultures, and values.
+        </Text>
+
+        <Text weight={500} mt={20}>
+        on campus, i'm the tech editor of the harvard advocate, a lovely literary magazine with an even lovelier website. i'm also involved with tech for social good and the harvard review of philosophy. 
+        </Text>
+        
+        <Text weight={500} mt={20}>
+        last summer, i interned at infosys where i developed interpretability metrics for document-processing ml models. i also researched for the surveillance technology oversight project.
         </Text>
         <Text weight={500} mt={20}>
-          I&apos;ve been working to improve myself in web development field
-          since 2020 with a focus on responsive web applications. I enjoy
-          learning new technologies and tools, writing articles, and working on
-          open source projects. My motivation for developing this website is to
-          share my learnings with the rest of the world.
+        i've always felt that there's nothing more radical and empowering than logging and broadcasting all the media i consume online. in that vein, i'm&nbsp;
+        <Anchor
+            variant="link"
+            href="https://letterboxd.com/bjorksriddle/"
+            target="_blank"
+            weight={500}
+            underline
+          >
+            @bjorksriddle
+          </Anchor>
+           &nbsp;on letterboxd and&nbsp;
+           
+           <Anchor
+            variant="link"
+            href="https://open.spotify.com/user/bmqkxmx8y83y1g9q3768y6oze?si=9c2869f33ed1447f"
+            target="_blank"
+            weight={500}
+            underline
+          >
+            conanvevo
+          </Anchor>
+           &nbsp;on spotify. i also write (very sporadically) about digital culture on&nbsp;
+           <Anchor
+            variant="link"
+            href="https://queercoding.substack.com"
+            target="_blank"
+            weight={500}
+            underline
+          >
+          substack</Anchor>.
+           
+           
         </Text>
-        <Text weight={500} my={20}>
+
+
+        
+        <Text weight={500} mt={20}>
+          finally, and i cannot stress this enough, see my resume&nbsp;
+          <Anchor
+            variant="link"
+            href="https://drive.google.com/file/d/1GFE7QVwFNAvAmZSuFyxusM9nvb7h4IWW/view?usp=sharing" 
+            rel="noopener noreferrer"
+            target="_blank"
+            weight={500}
+            underline
+          >
+            here
+          </Anchor>
+        .
+
+        </Text>
+        {/* <Text weight={500} my={20}>
           Currently, I&apos;m working as a frontend developer at&nbsp;
           <Anchor
             href="https://90pixel.com/"
@@ -98,11 +158,14 @@ const About = () => {
           >
             <strong>by visiting this page</strong>.
           </Anchor>
-        </Text>
+        </Text> */}
+
+        </div>
+
       </Box>
       <Box>
-        <Title order={2} mt={50} mb={30}>
-          Contact Me
+        <Title order={2} mt={30} mb={30}>
+          you can also find me on
         </Title>
         <Group>
           {socialMediaIcons.map(
@@ -114,17 +177,21 @@ const About = () => {
           )}
         </Group>
       </Box>
-      <Box>
+      {/* <Box>
         <Title order={3} mt={50} mb={30}>
           My Github Stats
         </Title>
         <GitHubCalendar
-          username="aycanogut"
+          username="conanlu"
           year="last"
           style={{ maxWidth: '960px' }}
         />
+
+        
       </Box>
-      <NowPlaying />
+      
+      <NowPlaying /> */}
+
     </Layout>
   )
 }

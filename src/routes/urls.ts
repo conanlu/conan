@@ -3,7 +3,7 @@ export const urls = {
   Projects: '/projects',
   Articles: '/articles',
   Bookmarks: '/bookmarks',
-  Tools: '/tools',
-  Timeline: '/timeline',
+  Experience: '/experience',
+  Coursework: '/coursework',
   About: '/about',
 }

@@ -3,30 +3,30 @@ import { urls } from './urls'
 export const navigation = [
   {
     link: urls.Home,
-    label: 'Home',
+    label: 'home',
   },
   {
     link: urls.Projects,
-    label: 'Projects',
+    label: 'projects',
   },
   // {
   //   link: urls.Articles,
   //   label: 'Articles',
   // },
+  // {
+  //   link: urls.Bookmarks,
+  //   label: 'bookmarks',
+  // },
   {
-    link: urls.Bookmarks,
-    label: 'Bookmarks',
+    link: urls.Experience,
+    label: 'experience',
   },
   {
-    link: urls.Tools,
-    label: 'Tools',
-  },
-  {
-    link: urls.Timeline,
-    label: 'Timeline',
+    link: urls.Coursework,
+    label: 'coursework',
   },
   {
     link: urls.About,
-    label: 'About',
+    label: 'about',
   },
 ]

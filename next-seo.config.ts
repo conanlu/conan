@@ -1,12 +1,12 @@
 import { DefaultSeoProps } from 'next-seo'
 
 const SEO: DefaultSeoProps = {
-  title: 'aycan.dev',
-  description: 'The portfolio website of Aycan Öğüt, a software developer.',
+  title: 'conan.fyi',
+  description: 'personal site and portfolio of conan lu',
   openGraph: {
-    url: 'https://www.aycan.dev',
-    title: 'aycan.dev',
-    description: 'The portfolio website of Aycan Öğüt, a software developer.',
+    url: 'https://conan.fyi',
+    title: 'conan.fyi',
+    description: 'personal site and portfolio of conan lu',
     type: 'website',
     locale: 'en_IE',
     images: [
@@ -18,11 +18,11 @@ const SEO: DefaultSeoProps = {
         type: 'image/png',
       },
     ],
-    siteName: 'aycan.dev',
+    siteName: 'conan.fyi',
   },
   twitter: {
-    handle: '@bleedeleventh',
-    site: '@bleedeleventh',
+    handle: '@conanvevo',
+    site: '@conanvevo',
     cardType: 'summary_large_image',
   },
 }

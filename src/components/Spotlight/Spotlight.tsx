@@ -12,7 +12,9 @@ import {
   Search,
   Sun,
   Timeline,
+  School,
   Tool,
+  Alien
 } from 'tabler-icons-react'
 
 import { ISpotlightProps } from '../../interfaces/Spotlight.interface'
@@ -23,43 +25,48 @@ const Spotlight: FC<ISpotlightProps> = ({ children }) => {
 
   const SpotlightContent = [
     {
-      title: 'Home',
+      title: 'home',
       icon: <Home2 />,
       url: '/',
     },
     {
-      title: 'Projects',
+      title: 'projects',
       icon: <AppWindow />,
       url: '/projects',
     },
+    // {
+    //   title: 'articles',
+    //   icon: <Notes />,
+    //   url: '/articles',
+    // },
+    // {
+    //   title: 'bookmarks',
+    //   icon: <Bookmarks />,
+    //   url: '/bookmarks',
+    // },
+    // {
+    //   title: 'tools',
+    //   icon: <Tool />,
+    //   url: '/tools',
+    // },
     {
-      title: 'Articles',
-      icon: <Notes />,
-      url: '/articles',
-    },
-    {
-      title: 'Bookmarks',
-      icon: <Bookmarks />,
-      url: '/bookmarks',
-    },
-    {
-      title: 'Tools',
-      icon: <Tool />,
-      url: '/tools',
-    },
-    {
-      title: 'Timeline',
+      title: 'experience',
       icon: <Timeline />,
-      url: '/timeline',
+      url: '/coursework',
+    },
+    {
+      title: 'coursework',
+      icon: <School />,
+      url: '/coursework',
     },
 
     {
-      title: 'About',
-      icon: <Pacman />,
+      title: 'about',
+      icon: <Alien />,
       url: '/about',
     },
     {
-      title: 'Toggle Theme',
+      title: 'toggle theme',
       icon: colorScheme === 'dark' ? <Sun /> : <Moon />,
     },
   ]

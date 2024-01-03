@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://aycan.dev/sitemap.xml
+Sitemap: https://conan.fyi/sitemap.xml

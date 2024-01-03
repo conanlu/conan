@@ -64,7 +64,7 @@ const About = () => {
         🧍🏻‍♂️
         </Title>
         <Text mt={20}>
-        i ran an astrology blog on tumblr when i was thirteen. i also grew a tiny readership answering random questions on quora. i was even a charli xcx fan on twitter which i later quit to pursue middle school full-time.  i’ve grown a lot since then, but i still carry the experience of having lived many, many digital lives into the work i do today. at harvard, i study computer science and philosophy, where i hope to understand how technology interfaces with societies, cultures, and values.
+        i ran an astrology blog on tumblr when i was thirteen. i also grew a tiny readership answering random questions on quora. i even ran a charli xcx fan account on twitter, which i later quit to pursue middle school full-time. i’ve grown a lot since then, but i still carry the experience of having lived many, many digital lives into the work i do today. at harvard, i study computer science and philosophy, where i hope to understand how technology interfaces with societies, cultures, and values.
         </Text>
 
         <Text mt={20}>
@@ -126,36 +126,6 @@ const About = () => {
         .
 
         </Text>
-        {/* <Text weight={500} my={20}>
-          Currently, I&apos;m working as a frontend developer at&nbsp;
-          <Anchor
-            href="https://90pixel.com/"
-            target="_blank"
-            variant="link"
-            weight={500}
-            underline
-          >
-            <strong>90Pixel</strong>
-          </Anchor>
-          .
-        </Text>
-        <Text weight={500} mt={20}>
-          Along with pixel hunting, I enjoy skating, going to live music events,
-          playing video games, watching TV series, and hanging out with my
-          friends.
-        </Text>
-        <Text weight={500} mt={20}>
-          Find out more about me&nbsp;
-          <Anchor
-            variant="link"
-            href="https://read.cv/aycanogut"
-            target="_blank"
-            weight={500}
-            underline
-          >
-            <strong>by visiting this page</strong>.
-          </Anchor>
-        </Text> */}
 
         </div>
 

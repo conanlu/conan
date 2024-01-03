@@ -23,4 +23,4 @@ jobs:
           config_timezone: Europe/Istanbul
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
-          plugin_pagespeed_url: https://aycan.dev
+          plugin_pagespeed_url: https://conan.fyi

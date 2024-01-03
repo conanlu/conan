@@ -1,4 +1,3 @@
-
 import {
   ColorScheme,
   ColorSchemeProvider,
@@ -17,17 +16,11 @@ import GlobalStyles from '../components/GlobalStyles/GlobalStyles'
 import Seo from '../components/Seo/Seo'
 import Spotlight from '../components/Spotlight/Spotlight'
 
-import { Inter } from 'next/font/google'
-
-
-const inter = Inter({ subsets: ['latin'] })
-
-
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID || ''
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
-  const [colorScheme, setColorScheme] = useState<ColorScheme>('light')
+  const [colorScheme, setColorScheme] = useState<ColorScheme>('dark')
 
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === 'dark' ? 'light' : 'dark')
@@ -40,22 +33,6 @@ export default function App(props: AppProps) {
   return (
     <>
       <Head>
-
-
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
-  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet" />
-
-
-
-
-
-        
         <title>conan&apos;s site</title>
         <meta
           name="viewport"
@@ -72,13 +49,7 @@ export default function App(props: AppProps) {
         toggleColorScheme={toggleColorScheme}
       >
         <MantineProvider
-          theme={{ colorScheme, 
-            
-            fontFamily: 'Fragment Mono, sans-serif',
-            headings: { fontFamily: 'Fragment Mono, sans-serif' },
-          
-          
-          }}
+          theme={{ colorScheme }}
           withGlobalStyles
           withNormalizeCSS
         >

@@ -15,7 +15,6 @@ module.exports = withBundleAnalyzer({
   images: {
     domains: ['i.scdn.co'],
     unoptimized: true,
-    
   },
   env: {
     GITHUB_URL: process.env.GITHUB_URL,

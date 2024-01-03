@@ -50,7 +50,7 @@ const HomePage = () => {
   return (
     <Layout>
       <Title order={1} mb={30}>
-        hi, i'm conan! 💿🎐🍄
+        hi, i'm conan! 🎐
       {/* 🦪💿🎠🫐🎐🍄 */}
       </Title>
       <Box>

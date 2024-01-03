@@ -40,7 +40,7 @@ const Projects = () => {
       </Group>
       <Grid gutter="xl" grow>
         {projects.map((project: IProjectProps) => (
-          <Grid.Col span={6} xs={4} key={project.id}>
+          <Grid.Col span={6} xs={6} key={project.id}>
             <Project
               id={project.id}
               image={project.image}

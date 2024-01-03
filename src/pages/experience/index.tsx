@@ -42,7 +42,7 @@ const Experience = () => {
       <Grid gutter="xl" grow>
         
         
-          <Grid.Col span={6} xs={6}>
+          <Grid.Col span={12} xs={12}>
           <List center icon>
           <List.Item>
             <Text color="dimmed" size="sm">
@@ -62,9 +62,9 @@ const Experience = () => {
         </List>
             
           </Grid.Col>
-          <Grid.Col span={6} xs={6}>
+          {/* <Grid.Col span={6} xs={6}>
 
-          </Grid.Col>
+          </Grid.Col> */}
       </Grid>
       </MantineTimeline.Item>
 
@@ -82,7 +82,7 @@ const Experience = () => {
       <Grid gutter="xl" grow>
         
         
-          <Grid.Col span={6} xs={6}>
+          <Grid.Col span={12} xs={12}>
           <List center icon>
           <List.Item>
             <Text color="dimmed" size="sm">
@@ -91,7 +91,7 @@ const Experience = () => {
           </List.Item>
           <List.Item>
             <Text color="dimmed" size="sm">
-            • authored op-ed on privacy implications of the kids online safety act (kosa)
+            • authored op-ed on privacy implications of the kids online safety act (KOSA)
             </Text>
           </List.Item>
           <List.Item>
@@ -102,9 +102,9 @@ const Experience = () => {
         </List>
             
           </Grid.Col>
-          <Grid.Col span={6} xs={6}>
+          {/* <Grid.Col span={6} xs={6}>
 
-          </Grid.Col>
+          </Grid.Col> */}
       </Grid>
       </MantineTimeline.Item>
 

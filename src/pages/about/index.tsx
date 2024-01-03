@@ -61,20 +61,20 @@ const About = () => {
       <div className={inter.className}>
 
         <Title order={1} mb={30}>
-          meeee :)
+        🧍🏻‍♂️
         </Title>
-        <Text weight={500} mt={20}>
+        <Text mt={20}>
         i ran an astrology blog on tumblr when i was thirteen. i also grew a tiny readership answering random questions on quora. i was even a charli xcx fan on twitter which i later quit to pursue middle school full-time.  i’ve grown a lot since then, but i still carry the experience of having lived many, many digital lives into the work i do today. at harvard, i study computer science and philosophy, where i hope to understand how technology interfaces with societies, cultures, and values.
         </Text>
 
-        <Text weight={500} mt={20}>
+        <Text mt={20}>
         on campus, i'm the tech editor of the harvard advocate, a lovely literary magazine with an even lovelier website. i'm also involved with tech for social good and the harvard review of philosophy. 
         </Text>
         
-        <Text weight={500} mt={20}>
+        <Text mt={20}>
         last summer, i interned at infosys where i developed interpretability metrics for document-processing ml models. i also researched for the surveillance technology oversight project.
         </Text>
-        <Text weight={500} mt={20}>
+        <Text mt={20}>
         i've always felt that there's nothing more radical and empowering than logging and broadcasting all the media i consume online. in that vein, i'm&nbsp;
         <Anchor
             variant="link"
@@ -111,7 +111,7 @@ const About = () => {
 
 
         
-        <Text weight={500} mt={20}>
+        <Text mt={20}>
           finally, and i cannot stress this enough, see my resume&nbsp;
           <Anchor
             variant="link"

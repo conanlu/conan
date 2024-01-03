@@ -20,7 +20,7 @@ const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID || ''
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
-  const [colorScheme, setColorScheme] = useState<ColorScheme>('dark')
+  const [colorScheme, setColorScheme] = useState<ColorScheme>('light')
 
   const toggleColorScheme = (value?: ColorScheme) => {
     const nextColorScheme = value || (colorScheme === 'dark' ? 'light' : 'dark')
@@ -49,7 +49,13 @@ export default function App(props: AppProps) {
         toggleColorScheme={toggleColorScheme}
       >
         <MantineProvider
-          theme={{ colorScheme }}
+          theme={{ colorScheme,
+            fontFamily: 'Andale Mono, monospace',
+            headings: { fontFamily: 'Andale Mono, monospace' },
+              
+          
+          
+          }}
           withGlobalStyles
           withNormalizeCSS
         >

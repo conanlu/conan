@@ -68,12 +68,22 @@ const About = () => {
         </Text>
  */}
         <Text mt={20}>
-        i study computer science & philosophy at harvard, where i hope to understand how technology interfaces with societies, cultures, and values. on campus, i'm the tech editor of the harvard advocate, a lovely literary magazine with an even lovelier website. i'm also involved with tech for social good and the harvard review of philosophy. 
+        i study computer science & philosophy at harvard, where i explore how technology and society co-produce each other. on campus, i'm the tech editor of our collegiate literary magazine, <i>the harvard advocate</i>. i've also managed pro bono software engineering projects for <i>tech for social good</i> and currently help teach classes in the CS department. 
         </Text>
         
         <Text mt={20}>
-        last summer, i interned at infosys where i developed interpretability metrics for document-processing ml models. i also researched for the surveillance technology oversight project.
+        i'm currently interested in software development roles. last summer, i interned at infosys where i developed interpretability metrics for document-processing ml models. i also researched for the surveillance technology oversight project.
         </Text>
+
+        <Text mt={20}>
+          talk to me about: representational harm, digital privacy, 
+        </Text>
+
+        {/* <Text mt={20}>
+        currently reading: Immediacy: Or, the Style of Too-Late Capitalism by Anna Kornbluh
+        currently listening: Lucifer, A.G. Cook
+        </Text> */}
+
         <Text mt={20}>
          i'm&nbsp;
         <Anchor

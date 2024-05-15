@@ -16,10 +16,12 @@ import {
   Box,
   Group,
   Paper,
+  Grid,
   Stack,
   Text,
   Title,
   Image,
+  Space,
   Center,
   useMantineColorScheme,
 } from '@mantine/core'
@@ -33,6 +35,9 @@ import useWidth from '../hooks/useWidth'
 import { IArticleProps } from '../interfaces/Blog.interface'
 import fetcher from '../lib/fetcher'
 
+import isMobileDevice from "../lib/device"; // import the function
+
+
 const Error = dynamic(() => import('../components/Error/Error'))
 
 const HomePage = () => {
@@ -44,22 +49,30 @@ const HomePage = () => {
   const { colorScheme } = useMantineColorScheme()
   const { width } = useWidth()
 
+  
+  const mobile = isMobileDevice(800);
+
+
+
   if (!data) return <Loader />
   if (error) return <Error />
 
   return (
     <Layout>
-      <Title order={1} mb={30}>
-        hi, i'm conan! 🎐
-      {/* 🦪💿🎠🫐🎐🍄 */}
-      </Title>
+
       <Box>
         <Group position="apart">
           <Group direction="column" spacing={2}>
-            <Text>i'm a sophomore at harvard college studying computer science & philosophy.</Text>
-        
-            <Text>
-              find my whole spiel&nbsp;
+
+
+            <Grid>
+              <Grid.Col span={mobile ? 12 : 6}>
+              <Title order={1} mb={30}>
+        hi, i'm conan! 🎐
+      {/* 🦪💿🎠🫐🎐🍄 */}
+      </Title>
+      {/* {mobile ? <Title>hehe</Title> : <Title>no</Title>} */}
+              <Text>i'm a sophomore at harvard college studying computer science & philosophy. find my whole spiel&nbsp;
               <Link href="/about" passHref prefetch={false}>
                 <Anchor component="span" weight={500} underline>
                   <strong>here</strong>
@@ -74,7 +87,30 @@ const HomePage = () => {
               .
             </Text>
 
-            <Text mt={10}>below is me in seattle which is where i live.</Text>
+            {/* <Text mt={10}>that's me in seattle which is where i live</Text> */}
+
+
+
+              </Grid.Col>
+
+              <Grid.Col span={mobile ? 12 : 6}>
+
+                <Space h={mobile ? width / 16 : 0}></Space>
+
+              <Image
+      height={mobile ? width / 2 : width  / 3}
+      width={mobile ? width * 4 / 5 : width * 1.12 / 4}
+      radius="xl"
+      // width={auto}
+      src="/meee.jpg"
+    />
+
+
+              </Grid.Col>
+              
+
+            </Grid>
+            
 
       
           </Group>
@@ -89,15 +125,7 @@ const HomePage = () => {
 
           <Group direction="column" mt={40}>
 
-
-            
-          
-        <Image
-      height={400}
-      radius="xl"
-      // w={500}
-      src="/meee.jpg"
-    />
+        
 
 
 

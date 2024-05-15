@@ -25,6 +25,42 @@ const Coursework = () => {
     🏫
     </Title>
     <MantineTimeline active={1} color={theme.colorScheme === 'dark' ? 'yellow' : 'blue'}>
+    <MantineTimeline.Item
+        bullet={<Circle size={48} strokeWidth={4} color="white" />}
+        title="fall 2024"
+      >
+        <List center icon>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              cs 61: systems programming and machine organizations
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              emr 157: techno-orientalism: asia, futurity, technology
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              phil 98: normative philosophy of computing
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              phil 4: logic i
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              teaching fellow, cs 1200 (introduction to algorithms and their limitations)
+            </Text>
+          </List.Item>
+        </List>
+
+        {/* <Text size="xs" mt={4}>
+          Now
+        </Text> */}
+      </MantineTimeline.Item>
       <MantineTimeline.Item
         bullet={<Circle size={48} strokeWidth={4} color="white" />}
         title="spring 2024"
@@ -104,7 +140,7 @@ const Coursework = () => {
         <List center icon>
           <List.Item>
             <Text color="dimmed" size="sm">
-              cs 120: algorithms and their limitations
+              cs 120: introduction to algorithms and their limitations
             </Text>
           </List.Item>
           <List.Item>

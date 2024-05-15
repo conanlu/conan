@@ -72,14 +72,14 @@ const HomePage = () => {
       {/* 🦪💿🎠🫐🎐🍄 */}
       </Title>
       {/* {mobile ? <Title>hehe</Title> : <Title>no</Title>} */}
-              <Text>i'm a sophomore at harvard college studying computer science & philosophy. find my whole spiel&nbsp;
+              <Text>i'm a rising junior at harvard college studying computer science & philosophy. find my whole spiel&nbsp;
               <Link href="/about" passHref prefetch={false}>
                 <Anchor component="span" weight={500} underline>
                   <strong>here</strong>
                 </Anchor>
               </Link>
               , and my resume&nbsp;
-              <Link href="https://drive.google.com/file/d/1GFE7QVwFNAvAmZSuFyxusM9nvb7h4IWW/view?usp=sharing" passHref target="_blank" rel="noopener noreferrer" prefetch={false}>
+              <Link href="https://drive.google.com/file/d/1PCBSbXxY5SbgyNidAfuPAgbUDqNeWhtg/view?usp=sharing" passHref target="_blank" rel="noopener noreferrer" prefetch={false}>
                 <Anchor component="span" weight={500} underline>
                   <strong>here</strong>
                 </Anchor>
@@ -99,7 +99,7 @@ const HomePage = () => {
 
               <Image
       height={mobile ? width / 2 : width  / 3}
-      width={mobile ? width * 4 / 5 : width * 1.12 / 4}
+      width={mobile ? width * 7 / 8 : width * 1.12 / 4}
       radius="xl"
       // width={auto}
       src="/meee.jpg"

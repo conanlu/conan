@@ -68,23 +68,47 @@ const About = () => {
         </Text>
  */}
         <Text mt={20}>
-        i study computer science & philosophy at harvard, where i explore how technology and society co-produce each other. on campus, i'm the tech editor of our collegiate literary magazine, <i>the harvard advocate</i>. i've also managed pro bono software engineering projects for <i>tech for social good</i> and currently help teach classes in the CS department. 
+        i study computer science & philosophy at harvard, where i explore how technology and society co-produce one another. on campus, i'm the tech editor of our collegiate literary magazine,&nbsp; 
+        {/* <i>the harvard advocate</i>.  */}
+        <Anchor
+            variant="link"
+            href="https://theharvardadvocate.com" 
+            rel="noopener noreferrer"
+            target="_blank"
+            weight={500}
+            underline
+          >
+            the harvard advocate
+          </Anchor>
+        .
+        i've also managed pro bono software engineering projects for&nbsp; 
+        <Anchor
+            variant="link"
+            href="https://socialgood.hcs.harvard.edu" 
+            rel="noopener noreferrer"
+            target="_blank"
+            weight={500}
+            underline
+          >
+            tech for social good
+          </Anchor>
+          &nbsp;and i currently help teach classes in the CS department. 
         </Text>
         
         <Text mt={20}>
-        i'm currently interested in software development roles. last summer, i interned at infosys where i developed interpretability metrics for document-processing ml models. i also researched for the surveillance technology oversight project.
+        i'm currently interested in software development roles. last summer, i interned at infosys, where i developed interpretability metrics for document-processing ml models. i also contributed research to the surveillance technology oversight project, an advocacy and litigation group for digital privacy.
         </Text>
 
-        <Text mt={20}>
+        {/* <Text mt={20}>
           talk to me about: representational harm, digital privacy, 
-        </Text>
+        </Text> */}
 
         {/* <Text mt={20}>
         currently reading: Immediacy: Or, the Style of Too-Late Capitalism by Anna Kornbluh
         currently listening: Lucifer, A.G. Cook
         </Text> */}
 
-        <Text mt={20}>
+        {/* <Text mt={20}>
          i'm&nbsp;
         <Anchor
             variant="link"
@@ -117,15 +141,15 @@ const About = () => {
           substack</Anchor>.
            
            
-        </Text>
+        </Text> */}
 
 
         
         <Text mt={20}>
-          finally, and i cannot stress this enough, see my resume&nbsp;
+          finally (and i cannot stress this enough) see my resume&nbsp;
           <Anchor
             variant="link"
-            href="https://drive.google.com/file/d/1GFE7QVwFNAvAmZSuFyxusM9nvb7h4IWW/view?usp=sharing" 
+            href="https://drive.google.com/file/d/1PCBSbXxY5SbgyNidAfuPAgbUDqNeWhtg/view?usp=sharing" 
             rel="noopener noreferrer"
             target="_blank"
             weight={500}

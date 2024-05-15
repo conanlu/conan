@@ -29,6 +29,45 @@ const Experience = () => {
     </Title>
     <MantineTimeline active={1} color={theme.colorScheme === 'dark' ? 'yellow' : 'blue'}>
 
+    <MantineTimeline.Item
+        bullet={<Circle size={48} strokeWidth={4} color="white" />}
+        title="cyber risk & advisory intern @ deloitte"
+      >
+
+      <Text size="md" mt={6}>
+          <i>summer 2024</i>
+        </Text>
+
+
+      <Grid gutter="xl" grow>
+        
+        
+          <Grid.Col span={12} xs={12}>
+          {/* <List center icon>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+            • developed explainability metrics for xtractedge, a document-processing tool 
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+            • utilized BERT explainability tools for sequence classification, token classification, and q&a
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+            • analyzed contract law cases 
+            </Text>
+          </List.Item>
+        </List> */}
+            
+          </Grid.Col>
+          {/* <Grid.Col span={6} xs={6}>
+
+          </Grid.Col> */}
+      </Grid>
+      </MantineTimeline.Item>
+
       <MantineTimeline.Item
         bullet={<Circle size={48} strokeWidth={4} color="white" />}
         title="software engineering intern @ infosys"

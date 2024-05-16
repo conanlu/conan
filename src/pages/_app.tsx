@@ -16,7 +16,17 @@ import GlobalStyles from '../components/GlobalStyles/GlobalStyles'
 import Seo from '../components/Seo/Seo'
 import Spotlight from '../components/Spotlight/Spotlight'
 
+
+import '/public/RedditMono/RedditMono.css';
+
+
+// import { Reddit_Mono } from 'next/font/google'
+
+
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID || ''
+
+// const RedditMono = Reddit_Mono({ subsets: ['latin'] })
+
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
@@ -33,11 +43,11 @@ export default function App(props: AppProps) {
   return (
     <>
       <Head>
-
+{/* 
       <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com"  />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
-
+ */}
 
 
 

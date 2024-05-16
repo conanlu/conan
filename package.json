@@ -32,6 +32,7 @@
     "@mantine/prism": "4.2.12",
     "@mantine/spotlight": "^4.2.11",
     "@next/bundle-analyzer": "^12.1.4",
+    "@next/font": "^14.2.3",
     "@phntms/next-gtm": "^0.1.0",
     "@types/ua-parser-js": "^0.7.39",
     "@vercel/analytics": "^0.1.11",

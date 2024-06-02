@@ -17,10 +17,11 @@ export const projects = [
       },
     ],
   },
+  
   {
     id: 1,
     title: 'conan.fyi',
-    description: 'this personal portfolio. based on template from aycan.dev',
+    description: 'This personal portfolio, modified from aycan.dev. Look around!',
     stack: ['React.js', 'Next.js', 'TypeScript', 'Mantine'],
     links: [
       {
@@ -35,8 +36,8 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'ensemble perturbations ',
-    description: 'inspired by anti-surveillance fashion and clearview ai discourse, i render photos illegible to facial detection algorithms using GANs and facial landmarks.',
+    title: 'Ensemble Perturbations ',
+    description: 'Inspired by anti-surveillance fashion, I render photos illegible to facial detection algorithms using GANs and facial landmarks.',
     stack: ['computer vision', 'python', 'opencv', 'ffmpeg'],
     links: [
       {

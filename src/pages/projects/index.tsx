@@ -9,10 +9,20 @@ import Loader from '../../components/Loader/Loader'
 import { projects } from '../../data/projects'
 import { IProjectProps } from '../../interfaces/Project.interface'
 
+import isMobileDevice from "../../lib/device"; // import the function
+
+
 const Project = dynamic(() => import('../../components/Project/Project'))
+
+
+
 
 const Projects = () => {
   const theme = useMantineTheme()
+
+
+  const mobile = isMobileDevice(800);
+
 
   if (!projects) return <Loader />
 
@@ -40,7 +50,7 @@ const Projects = () => {
       </Group>
       <Grid gutter="xl" grow>
         {projects.map((project: IProjectProps) => (
-          <Grid.Col span={6} xs={6} key={project.id}>
+          <Grid.Col span={mobile ? 12 : 6} xs={6} key={project.id}>
             <Project
               id={project.id}
               image={project.image}

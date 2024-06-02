@@ -32,7 +32,7 @@ const Coursework = () => {
         <List center icon>
           <List.Item>
             <Text color="dimmed" size="sm">
-              cs 61: systems programming and machine organizations
+              cs 61: systems programming and machine organization
             </Text>
           </List.Item>
           <List.Item>

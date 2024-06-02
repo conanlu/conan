@@ -71,37 +71,52 @@ const About = () => {
         i study computer science & philosophy at harvard, where i explore how technology and society co-produce one another. on campus, i'm the tech editor of our collegiate literary magazine,&nbsp; 
         {/* <i>the harvard advocate</i>.  */}
         <Anchor
-            variant="link"
             href="https://theharvardadvocate.com" 
             rel="noopener noreferrer"
             target="_blank"
             weight={500}
-            underline
+            variant="gradient"
+            gradient={{ from: 'red', to: 'red'}}
+            // color="firebrick"
           >
             the harvard advocate
           </Anchor>
         .
         i've also managed pro bono software engineering projects for&nbsp; 
         <Anchor
-            variant="link"
             href="https://socialgood.hcs.harvard.edu" 
             rel="noopener noreferrer"
             target="_blank"
             weight={500}
-            underline
+            variant="gradient"
+            gradient={{ from: 'teal', to: 'teal'}}
           >
             tech for social good
           </Anchor>
-          &nbsp;and i currently help teach classes in the CS department. 
+         &nbsp;and created data visualizations about boston's open spaces for the&nbsp;
+         <Anchor
+            href="https://why-we-gather.vercel.app" 
+            rel="noopener noreferrer"
+            target="_blank"
+            weight={500}
+            variant="gradient"
+            gradient={{ from: 'crimson', to: 'crimson'}}
+          >berkman klein center</Anchor>.
         </Text>
         
         <Text mt={20}>
-        i'm currently interested in software development roles. last summer, i interned at infosys, where i developed interpretability metrics for document-processing ml models. i also contributed research to the surveillance technology oversight project, an advocacy and litigation group for digital privacy.
+        i'm currently interested in software engineering roles. last summer, i interned at infosys, where i developed interpretability metrics for document-processing ml models. i also contributed research to the surveillance technology oversight project, an advocacy and litigation group for digital privacy.
         </Text>
 
-        {/* <Text mt={20}>
-          talk to me about: representational harm, digital privacy, 
-        </Text> */}
+        <Text mt={20}>
+          drop me a line about: online privacy, section 230, the new charli xcx album, standpoint epistemology, your favorite next.js ui kits, walter benjamin's "the work of art in the age of mechanical reproduction," girls on hbo, deepfake regulation, or anything from
+          <Anchor variant="gradient"
+            gradient={{ from: 'green', to: 'black'}} href="https://reallifemag.com">
+          &nbsp;<i>real life. </i>
+        </Anchor>
+        </Text>
+
+        
 
         {/* <Text mt={20}>
         currently reading: Immediacy: Or, the Style of Too-Late Capitalism by Anna Kornbluh
@@ -149,12 +164,12 @@ const About = () => {
           finally (and i cannot stress this enough) see my resume&nbsp;
           <Anchor
             variant="link"
-            href="https://drive.google.com/file/d/1PCBSbXxY5SbgyNidAfuPAgbUDqNeWhtg/view?usp=sharing" 
+            href="../../resume.pdf" 
             rel="noopener noreferrer"
             target="_blank"
-            weight={500}
-            underline
-          >
+            weight={500}  
+            
+            >
             here
           </Anchor>
         .

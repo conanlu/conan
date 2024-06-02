@@ -43,6 +43,14 @@ export default createStyles((theme) => ({
     },
   },
 
+  // a: {
+  //   color:
+  //   theme.colorScheme === 'dark'
+  //     ? theme.colors.yellow[5]
+  //     : theme.colors.blue[5],
+
+  // },
+
   link: {
     display: 'block',
     lineHeight: 1,
@@ -51,7 +59,7 @@ export default createStyles((theme) => ({
     textDecoration: 'none',
     color:
       theme.colorScheme === 'dark'
-        ? theme.colors.dark[0]
+        ? theme.colors.blue[0]
         : theme.colors.dark[7],
     fontSize: theme.fontSizes.sm,
     fontWeight: 700,

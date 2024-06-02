@@ -8,15 +8,15 @@ import { navigation } from '../../routes/navigation'
 import Header from '../Header/Header'
 import Transition from '../Transition/Transition'
 
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 
 const Layout: FC<ILayoutProps> = ({ children }) => (
   <>
     <Header links={navigation} />
-    <main className={inter.className}>
+    <main>
       <Container size="md" px="xl" pt={60} pb={70}>
         <Transition
           initial={{ y: 16 }}

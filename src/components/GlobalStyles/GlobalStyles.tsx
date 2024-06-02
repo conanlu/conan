@@ -19,6 +19,15 @@ const GlobalStyles: FC = () => (
         margin: '0 auto',
       },
 
+
+
+      link: {
+        color: 
+        theme.colorScheme === 'dark'
+          ? theme.colors.red[5]
+          : theme.colors.green[5],
+      },
+
       '::selection': {
         color: theme.colors.dark[9],
         background: theme.colors.yellow[4],

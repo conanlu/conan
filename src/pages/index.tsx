@@ -73,31 +73,20 @@ const HomePage = () => {
               {/* {mobile ? <Title>hehe</Title> : <Title>no</Title>} */}
               <Text>i'm a rising junior at harvard college studying computer science & philosophy. find my whole spiel
 
-              <Link href="/about" passHref prefetch={false}>
-
-
-
                 {theme.colorScheme == 'light' ? 
-
-              <Anchor component="span" weight={500}  variant="gradient" gradient={{ from: 'blue', to: 'darkorchid' }} > <strong>here</strong>  </Anchor> :  <Anchor component="span" weight={500}  variant="gradient" gradient={{ from: 'yellow', to: 'rosybrown' }} > <strong>here</strong>  </Anchor>
-              
+              <Anchor href="/about" weight={500}  variant="gradient" gradient={{ from: 'blue', to: 'darkorchid' }} > <strong>here</strong>  </Anchor> :  <Anchor href="/about"  weight={500}  variant="gradient" gradient={{ from: 'yellow', to: 'rosybrown' }} > <strong>here</strong>  </Anchor>    
                 }
 
-              </Link>
 
                 
                   
               and my resume
-              <Link href="../../resume.pdf"  passHref target="_blank" rel="noopener noreferrer" prefetch={false}>
               {theme.colorScheme == 'light' ? 
-
-              <Anchor component="span" weight={500}  variant="gradient" gradient={{ from: 'darkorchid', to: 'indigo' }} > <strong>here</strong></Anchor> : <Anchor component="span" weight={500}  variant="gradient" gradient={{ from: 'rosybrown', to: 'salmon' }} > <strong>here</strong></Anchor>
+              <Anchor href="../../resume.pdf" target="_blank" rel="noopener noreferrer"  weight={500}  variant="gradient" gradient={{ from: 'darkorchid', to: 'indigo' }} > <strong>here</strong></Anchor> : <Anchor target="_blank" rel="noopener noreferrer" href="../../resume.pdf" weight={500}  variant="gradient" gradient={{ from: 'rosybrown', to: 'salmon' }} > <strong>here</strong></Anchor>
               }
-              </Link>
               .
             </Text>
 
-            {/* <Text mt={10}>that's me in seattle which is where i live</Text> */}
 
 
 

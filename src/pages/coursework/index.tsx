@@ -27,6 +27,33 @@ const Coursework = () => {
     <MantineTimeline active={1} color={theme.colorScheme === 'dark' ? 'yellow' : 'blue'}>
     <MantineTimeline.Item
         bullet={<Circle size={48} strokeWidth={4} color="white" />}
+        title="spring 2025"
+      >
+        <List center icon>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              cs 1820: planning and learning methods in ai
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              german 192: artificial intelligences: body, art, and technology in modern germany
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              phil 173e: contemporary metaethics
+            </Text>
+          </List.Item>
+          <List.Item>
+            <Text color="dimmed" size="sm">
+              gened 1001: stories at the end of the world
+            </Text>
+          </List.Item>
+        </List>
+      </MantineTimeline.Item>
+    <MantineTimeline.Item
+        bullet={<Circle size={48} strokeWidth={4} color="white" />}
         title="fall 2024"
       >
         <List center icon>
@@ -56,10 +83,6 @@ const Coursework = () => {
             </Text>
           </List.Item>
         </List>
-
-        {/* <Text size="xs" mt={4}>
-          Now
-        </Text> */}
       </MantineTimeline.Item>
       <MantineTimeline.Item
         bullet={<Circle size={48} strokeWidth={4} color="white" />}

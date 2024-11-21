@@ -1,11 +1,11 @@
 import { DefaultSeoProps } from 'next-seo'
 
 const SEO: DefaultSeoProps = {
-  title: 'conan.fyi',
+  title: 'conan.report',
   description: 'personal site and portfolio of conan lu',
   openGraph: {
-    url: 'https://conan.fyi',
-    title: 'conan.fyi',
+    url: 'https://conan.report',
+    title: 'conan.report',
     description: 'personal site and portfolio of conan lu',
     type: 'website',
     locale: 'en_IE',
@@ -18,7 +18,7 @@ const SEO: DefaultSeoProps = {
         type: 'image/png',
       },
     ],
-    siteName: 'conan.fyi',
+    siteName: 'conan.report',
   },
   twitter: {
     handle: '@conanvevo',

@@ -5,7 +5,7 @@ import React, { FC } from 'react'
 const Seo: FC = () => {
   const router: NextRouter = useRouter()
 
-  const canonicalUrl = `https://conan.fyi${
+  const canonicalUrl = `https://conan.report${
     router.asPath === '/' ? '' : router.asPath
   }`.split('?')[0]
 
@@ -15,12 +15,12 @@ const Seo: FC = () => {
 
   return (
     <NextSeo
-      title="conan.fyi"
+      title="conan.report"
       titleTemplate={`${lowercaseTitle} @ %s`}
       description="The portfolio website of Conan Lu."
       openGraph={{
-        url: 'https://www.conan.fyi',
-        title: 'conan.fyi',
+        url: 'https://www.conan.report',
+        title: 'conan.report',
         description:
           'The portfolio website of Conan Lu.',
         type: 'website',
@@ -34,7 +34,7 @@ const Seo: FC = () => {
           //   type: 'image/png',
           // },
         ],
-        siteName: 'conan.fyi',
+        siteName: 'conan.report',
       }}
       twitter={{
         handle: '@conanvevo',

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://conan.fyi/sitemap.xml
+Sitemap: https://conan.report/sitemap.xml

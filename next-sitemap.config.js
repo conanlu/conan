@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://www.conan.fyi',
+  siteUrl: process.env.SITE_URL || 'https://www.conan.report',
   generateRobotsTxt: true,
 }

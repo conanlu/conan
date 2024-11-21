@@ -71,7 +71,7 @@ const HomePage = () => {
               {/* 🦪💿🎠🫐🎐🍄 */}
       </Title>
               {/* {mobile ? <Title>hehe</Title> : <Title>no</Title>} */}
-              <Text>i'm a rising junior at harvard college studying computer science & philosophy. find my whole spiel
+              <Text>i'm a junior at harvard college studying computer science & philosophy. find my whole spiel
 
                 {theme.colorScheme == 'light' ? 
               <Anchor href="/about" weight={500}  variant="gradient" gradient={{ from: 'blue', to: 'darkorchid' }} > <strong>here</strong>  </Anchor> :  <Anchor href="/about"  weight={500}  variant="gradient" gradient={{ from: 'yellow', to: 'rosybrown' }} > <strong>here</strong>  </Anchor>    

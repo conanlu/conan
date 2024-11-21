@@ -20,7 +20,7 @@ export const projects = [
   
   {
     id: 1,
-    title: 'conan.fyi',
+    title: 'conan.report',
     description: 'This personal portfolio, modified from aycan.dev. Look around!',
     stack: ['React.js', 'Next.js', 'TypeScript', 'Mantine'],
     links: [
@@ -29,7 +29,7 @@ export const projects = [
         id: 1,
       },
       {
-        link: 'https://conan.fyi',
+        link: 'https://conan.report',
         id: 2,
       },
     ],

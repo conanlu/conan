@@ -1,4 +1,4 @@
-## Overview
+## i adore to edit my website
 
 portfolio web app for conan lu built with next, mantine, and type. 
-template credit goes to [Aycan Öğüt](https://github.com/aycanogut).  
+base app credit: [Aycan Öğüt](https://github.com/aycanogut).  
